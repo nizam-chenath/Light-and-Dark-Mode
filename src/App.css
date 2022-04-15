@@ -1,38 +1,146 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'Ubuntu', sans-serif;
+}
+#light{
+  background-color: #F3EBF6;
+}
+#dark{
+  background-color: rgb(41, 16, 129);
+}
+.login{
+  
+  width: 400px;
+  height: 400px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+#light .login{
+  background-color: #fff;
+}
+#dark .login{
+  background-color: rgb(4, 47, 128);
+}
+
+.signin{
+  padding-top: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #8C55AA;
+  font-size: 23px;
+  font-weight: bold;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#dark .signin{
+  color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.username{
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Ubuntu', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form .form1{
+  padding-top: 40px;
+}
+.password{
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Ubuntu', sans-serif;
+}
+#dark .username,#dark .password{
+  background: rgba(182, 182, 201, 0.8);
+}
+.username:focus, .password:focus{
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+.forgot {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  padding-top: 15px;
+}
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  text-decoration: none;
+ 
+}
+p{
+  text-align: center;
+}
+.switch{
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  top: 0px;
+  right: -500px;
+  width: 100vw;
+  height: 100px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-family: 'ubuntu', sans-serif;
+}
+.switch label{
+  margin-right : 10px;
+}
+#dark .switch label{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 600px) {
+  .login {
+      border-radius: 0px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
